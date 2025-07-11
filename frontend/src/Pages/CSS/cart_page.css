@@ -1,0 +1,136 @@
+.cart-container {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  background-color: white;
+}
+
+.cart-top{
+  position: relative;
+  display: flex;
+}
+
+.cart-top button{ 
+  position: absolute;
+  height: 50px;
+  width: 200px;
+  right: 50px;
+  background-color: #c34242;
+}
+
+.cart-top button:hover{ 
+  background-color: var(--light-red);
+}
+
+.item-container{
+  align-items: center;
+  position: relative;
+  display: flex;
+  background: #f8f8f8;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-height: 150px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  
+  
+  margin: 1rem;
+}
+
+.cart-item img {
+  width: 120px;
+  height: 120px;
+  object-fit:contain;
+  margin-right: 1rem;
+}
+
+.item-info {
+  display: flex;
+  gap: 30px;
+  white-space:nowrap;
+  
+}
+
+.item-info p{
+  height: 50px;
+  line-height: 50px;
+}
+.item-info h3{
+  height: 50px;
+  line-height: 50px;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.quantity-control button {
+
+  font-size: 1rem;
+  color: rgb(141, 141, 141);
+  background-color: transparent;
+  margin: 0px;
+  padding: 7px;
+  
+}
+
+.quantity-control button:hover {
+
+
+  color: red;
+  background-color: transparent;
+  
+}
+
+
+.remove-btn {
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  width: 100px;
+  background: rgb(255, 207, 207);
+  border: none;
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  margin: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+.cart-summary {
+  margin-top: 2rem;
+  text-align: right;
+}
+
+.checkout-btn {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  background-color: var(--main-red);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.checkout-btn:hover {
+  background-color: var(--light-red);
+}
+
+.empty {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}

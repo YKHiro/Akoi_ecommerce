@@ -1,0 +1,27 @@
+.footer {
+    height: 150px;
+    margin-top: 50px;
+    background-color: rgb(255, 255, 255);
+    align-content: center;
+    text-align: center;
+
+    color: var(--main-red);
+}
+
+.redes-text{
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.redes-icons{
+    font-size: 50px;
+}
+.icon{
+    margin: 20px;
+}
+
+.footer p{
+    margin-top: 30px;
+    font-size: 18px;
+}
+

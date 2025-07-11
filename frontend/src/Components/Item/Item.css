@@ -1,0 +1,106 @@
+.link{
+    text-decoration: none;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    
+    width:  225px;
+    height: 510px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(212, 212, 212);
+    border-width: 1px;
+}
+.item img{
+    height: 250px;
+    width: 100%;
+    margin-top: 5px;
+    object-fit: contain;
+    background-color: rgb(255, 255, 255);
+}
+
+.item-description{
+    height: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: rgb(78, 78, 78);
+}
+.item p{
+    margin: 6px 0px;
+}
+
+.item-tag{
+    background-color: var(--main-red);
+    border-radius: 20px;
+    width: 50%;
+    height: 30px;
+    line-height: 30px;
+
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    padding: 0;
+}
+.item-prices{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.item-price-new{
+    color: var(--main-red);
+    font-size: 30px;
+    font-weight: 600;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.item-price-old{
+    text-decoration-line: line-through;
+    color: rgb(161, 161, 161);
+    font-size: 19px;
+    font-weight: 500;
+    height: 20px;
+
+}
+
+item:hover{
+    transform: scale(1.1);
+    transition: 0.6s;
+}
+
+
+
+.item-button button{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    height: 40px;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    background-color: var(--main-red);
+    border-radius: 5px;
+    border-style: none;
+    padding: 0;
+}
+
+.item-cartao{
+    margin-bottom: 20px;
+    font-size: 12px;
+    color: gray;
+}
+.item-vista{
+    font-size: 12px;
+    color: gray;
+}

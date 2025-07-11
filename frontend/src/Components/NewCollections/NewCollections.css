@@ -1,0 +1,67 @@
+.new-collections{
+    align-items: center;
+    gap: 2px;
+    height: fit-content;
+    width: 92%;
+    margin: auto;
+    margin-bottom: 50px;
+    
+}
+
+.new-collections h1{
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.new-collections hr{
+    width: 100px;
+    height: 2px;
+    border-style: none;
+    background: black;
+}
+
+.collections{
+
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+
+    justify-items: center;
+
+    gap: 10px;
+    height: 100%;
+
+}
+
+.mais-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    color: var(--main-red);
+    gap: 5px;
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+    height: 20px;
+    margin-top: 30px;
+    
+}
+
+.underline{
+    visibility: hidden;
+    width: 130px;
+    border: none;
+    background: var(--main-red);
+    margin-bottom: 30px;
+    
+}
+.mais-button:hover +.underline{
+    visibility: visible;
+    width: 130px;
+    border: none;
+    background: var(--main-red);
+
+}

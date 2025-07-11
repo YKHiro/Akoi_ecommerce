@@ -1,0 +1,127 @@
+.navbar{
+    position: sticky;
+    top: 0;
+    background: white;  
+    box-shadow: 0px 2px rgba(206, 206, 206, 0.478);
+        z-index: 100;
+}
+.navbar-content{
+    display: flex;
+    justify-content: space-around;
+    padding: 16;
+
+    max-width: 1600px;
+    margin: auto;
+    
+}
+
+.navbar-content a{
+    text-decoration: none
+}
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-logo img{
+    width: 80px;
+    margin: 3px;
+}
+
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav-menu li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3;
+    cursor: pointer;
+}
+
+.nav-menu a{
+    color: var(--main-red);
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none
+}
+
+.account-icon{
+    font-size: 30px;
+    color: var(--main-red);
+}
+.nav-account{
+    border-style: solid;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 30px;
+    border-width: 2px;
+    min-width: 100px;
+    height: 40px;
+    gap: 4px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: var(--main-red);
+}
+
+.nav-account p{
+    min-width: 50px;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+
+.nav-login-cart{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    
+}
+
+.nav-login-cart button{ 
+    width: 100px;
+    height: 40px;
+
+    outline: none;
+    border: 1px solid black;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 35px;
+    justify-content: center;
+
+    cursor: pointer;
+    background: white;
+}
+
+.nav-cart-count{
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -35px;
+    margin-left: -55px;
+    border-radius: 11px;
+    font-size: 11px;
+    background: var(--main-red);
+    color: white;
+}
+
+.cart-button{
+    cursor: pointer;
+    font-size: 35px;
+    color: var(--main-red);
+}

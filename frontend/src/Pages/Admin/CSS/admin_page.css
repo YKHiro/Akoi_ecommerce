@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  
+}
+.admin-container {
+  display: flex;
+  background-color: #f5f5ff;
+}
+
+
+.admin-sidebar {
+    width: 150px;
+  background-color: #ececec;
+  padding: 20px;
+    border: 1px, solid rgb(176, 176, 176);
+}
+
+.admin-sidebar .logo {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.admin-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.admin-sidebar li {
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+.option-list-active{
+    color: rgb(198, 94, 94);
+}
+
+.admin-sidebar .active {
+  font-weight: bold;
+  color: #6c63ff;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  background-color: #e4e4e4;
+  width: 100%;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ececec;
+  margin: 0px;
+  padding: 20px;
+  height: 30px;
+  border: 1px, solid rgb(176, 176, 176);
+  border-left: none;
+}
+
+.table-actions input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  height: 35px;
+  width: 300px;
+}
+
+.table-actions {
+  display: flex;
+  justify-content: end;
+  gap: 4px;
+  margin: 20px 0;
+}
+
+
+
+.status {
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+}

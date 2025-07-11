@@ -1,0 +1,104 @@
+.user-container {
+  max-width: 92%;
+  margin: 0 auto;
+  padding: 30px 20px;
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.user-info h2 {
+  margin: 0 0 10px 0;
+}
+
+.user-info p {
+  margin: 5px 0;
+}
+
+.orders-section,
+.wishlist-section {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.orders-section h2,
+.wishlist-section h2 {
+  margin-bottom: 15px;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.orders-table th {
+  background-color: #f0f0f0;
+}
+
+.btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.btn.primary {
+  background-color: var(--main-red);
+  color: white;
+}
+
+.btn.primary:hover {
+  background-color: var(--light-red);
+}
+
+.btn.danger {
+  background-color: var(--main-red);
+  color: white;
+}
+
+.btn.danger:hover {
+  background-color: var(--light-red);
+}
+
+@media (max-width: 600px) {
+  .profile-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .avatar {
+    margin-bottom: 15px;
+  }
+}
