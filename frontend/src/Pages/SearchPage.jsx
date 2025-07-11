@@ -18,7 +18,7 @@ export const SearchPage = () => {
 
     const queryParams = useQuery();
     const query = queryParams.get('query') || '';
-    const queryTags = useMemo(() => queryParams.getAll('tag'), [location.search]);
+    const queryTags = useMemo(() => queryParams.getAll('tag'), [location.search, queryParams]);
     const min = parseInt(queryParams.get('price_min') || '0');
     const max = parseInt(queryParams.get('price_max') || '1000');
     const [products, setProducts] = useState([]);
