@@ -83,7 +83,6 @@ export const AdminProductList = () => {
                 <td>{product.category}</td>
                 <td>{product.price}</td>
                 <td>{product.in_stock}</td>
-                <td><a href="#">Details</a></td>
               </tr>
             ))}
           </tbody>

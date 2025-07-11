@@ -23,7 +23,7 @@ export default function ShopContextProvider(props) {
                     },
                 })
                     .then(res => {
-                        if (res.status == "200") {
+                        if (res.status === "200") {
                             setIsLoggedIn(true);
                             res.json().then(data => {
                                 setStoreContext(prev => ({
@@ -54,7 +54,7 @@ export default function ShopContextProvider(props) {
             setLoadingContext(false)
         }
 
-    }, []);
+    }, [storeContext.UserName]);
     return (
         <ShopContext.Provider value={{ storeContext, setStoreContext, isLoggedIn, setIsLoggedIn, loadingContext }}>
             {props.children}

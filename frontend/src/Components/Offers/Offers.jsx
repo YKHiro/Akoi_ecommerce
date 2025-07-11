@@ -5,8 +5,6 @@ import { Link } from 'react-router-dom'
 
 import './Offers.css'
 
-import image from '../Assets/Imagens/kimetsu-1.jpg'
-
 export const Offers = () => {
 
       const [products, setProducts] = useState([]);

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './CSS/add_product.css'
 import config from "../../config";
 const TAG_OPTIONS = ['Promotion', 'Mangas', 'Figures', 'Clothes', 'Novels'];

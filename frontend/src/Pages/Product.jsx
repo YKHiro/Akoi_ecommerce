@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './CSS/product.css'
-import { Link, useNavigate, useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { fetchProducts } from '../Components/api';
 import { useStoreContext } from '../Context/ShopContest';
 
@@ -23,9 +23,9 @@ export const Product = () => {
   const addToCart = (product) => {
     console.log(product)
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
-    if (cart.find(item => item.id == product.id)) {
+    if (cart.find(item => item.id === product.id)) {
       cart = cart.map(item => {
-        if (item.id == product.id) {
+        if (item.id === product.id) {
           item.quantity = 2
         }
         return item

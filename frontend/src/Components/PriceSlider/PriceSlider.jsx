@@ -19,7 +19,7 @@ export const PriceSlider = ({ min = 0, max = 5000, stMinValue=0, stMaxValue=1000
         if (mounted) {
             onChange(minValue, maxValue);
         }
-    }, [minValue, maxValue]);
+    }, [minValue, maxValue, mounted, onChange]);
 
     const [mounted, setMounted] = useState(false);
 
